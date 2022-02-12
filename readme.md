@@ -1,2 +1,2 @@
 # PPE_DEV
-[Mon Portfolio](https://github.com/ryanvaugarni/PPE_DEV.git)
+[Mon Portfolio](https://ryanvaugarni.github.io/PPE_DEV/)
