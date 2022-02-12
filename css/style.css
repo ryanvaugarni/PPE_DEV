@@ -54,30 +54,31 @@ button,input,select{
 }
 /* thème */
 header{
-    margin: 0 auto;
-    display: block;
+    display: grid;
+    /* justify-content: space-evenly; */
     border: rgb(255, 252, 252);
+    grid-template-columns: repeat(3,1fr);
 }
 header img{
-    position: absolute;
-    top: 1rem;
-    left: 5rem;
-    width: 15rem;
-    cursor: pointer;
-    z-index: 5;
-    border-radius: 2rem;
+ margin-left: 3.5rem;
+ margin-top: 1rem;
 }
+
 header h1{
     text-align: center;
     padding: 3rem;
     border: transparent;
-    max-width: 80rem;
-    margin: 0 auto;
+    /* margin-right: 5rem; */
     margin-top: 1rem;
     color: #fff;
+    width: 70rem;
     background-color: #E30713;
     border-radius: 1rem;
 }
+header img{
+    width: 14rem;
+} 
+
 main h2{
     text-align: center;
     color: #fff;
@@ -100,7 +101,7 @@ main h2{
 main{
     margin: 0 auto;
 }
-main section ul{
+main article ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 2rem auto;
@@ -116,7 +117,7 @@ ul img{
     display: inline-block;
     border: solid .1rem #fff;
 }
-main section ul li{
+main article ul li{
     text-align: center;
 }
 main a{
@@ -148,19 +149,21 @@ footer p{
     margin-bottom: 3rem;
 }
 .container{
-position: relative;
-display: block;
-width: 100rem;
-margin: 5rem auto;
-padding: 1.6rem;
-background-color: #292929;
-color: #ffffff;
-border-radius: 0.4rem;
+    position: relative;
+    display: block;
+    max-width: 100rem;
+    margin: 5rem auto;
+    padding: 1.6rem;
+    background-color: #292929;
+    color: #ffffff;
+    border-radius: 0.4rem;
 }
 .container .form-element {
     position: relative;
     margin: 0 auto;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
+    display: block;
+    width: 100%;
    }
 .form-element input, select{
     box-sizing: border-box;
