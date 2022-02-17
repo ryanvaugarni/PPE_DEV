@@ -116,6 +116,14 @@ ul img{
     vertical-align: middle;
     display: inline-block;
     border: solid .1rem #fff;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+ul img:hover {
+    transform:scale(1.1);
 }
 main article ul li{
     text-align: center;
@@ -218,14 +226,4 @@ footer{
 }
 footer p{
     color: #fff;
-}
-ul img {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
-ul img:hover {
-    transform:scale(1.1);
 }
