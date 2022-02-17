@@ -50,18 +50,14 @@ button,input,select{
 }
 /* thème */
 header{
-    /* display: grid; */
     display: flex;
     border: rgb(255, 252, 252);
-    /* grid-template-columns: repeat(2,1fr); */
     align-items: center;
     justify-content: center;
 }
 header img{
     position: absolute;
-    left:6rem;
-   /* margin-left: 3.5rem;
-    margin-top: 1rem;*/
+    left: 10rem;
 }
 
 header h1{
