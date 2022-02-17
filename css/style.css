@@ -211,3 +211,21 @@ h3{
 option{
     color: #444444;
 }
+footer{
+    margin-top: 2rem;
+    background-color: #303030;
+    padding: 2rem;
+}
+footer p{
+    color: #fff;
+}
+ul img {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+ul img:hover {
+    transform:scale(1.1);
+}
