@@ -130,7 +130,6 @@ ul figure .material-icons{
 /* Overley effect */
 ul figure figcaption{
     display: grid;
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -172,8 +171,6 @@ ul figure:hover figcaption{
     box-shadow: 0 0 1rem rgba(0,0,0,0.6);
     z-index: 2;
     cursor: pointer;
-    
-    
 }
 .parent-modale .modale .desc{
     position: static;
