@@ -301,7 +301,7 @@ footer{
 footer p{
     color: #fff;
 }
-@media only screen and (max-width: 60rem) {
+@media screen and (max-width: 60rem) {
        header img{
             position: absolute;
             top: 3rem;
@@ -341,5 +341,20 @@ footer p{
         }
         main p{
             width: 100%;
+        }
+    }
+    @media screen and (orientation:landscape) and (max-width: 63rem){
+        main .grid-picture-large{
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            gap: 3rem;
+        }
+        main ul img{
+            width: 34rem;
+            height: 52rem;
+        }
+        div figure img{
+            width: 20rem;
+            height: 25rem;
         }
     }
