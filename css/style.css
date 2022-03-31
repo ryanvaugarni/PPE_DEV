@@ -225,6 +225,19 @@ footer p{
     text-align: center;
 }
 /* PAGE FORM*/
+.warning{
+    display: none;
+}
+.success{
+    padding: 3rem;
+    text-align: center;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(64, 112, 59);
+    border-radius: 1rem;
+    background-color: #292929;
+}
 .return{
     padding: 1rem;
     width: 10rem;
