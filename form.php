@@ -1,3 +1,4 @@
+<?php include_once ('connexion_bdd.php'); ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -29,7 +30,7 @@
             les films en VO, VOST, VF et plus d'options</p>
             <br>
     </section>
-    <a class="return" href="index.html">Retour</a>
+    <a class="return" href="index.php">Retour</a>
     <article>
         <ul class="grid-picture-large">
             <li data-image="./asset/img2.jpg" data-title="Omar" data-description="dans ce film le réalisateur Joe Doe..." data-dates="02/01/2020">
@@ -79,22 +80,14 @@
         </ul>
         <br>
     </article>
-        <form class="container" method="get">
+        <form action="<?php $_SERVER['PHP_SELF']?>" method="post" class="container">
             <h3>Formulaire de contact</h3>
             <br>
             <!--<p class="warning">Warning</p>-->
             <div class="form-element" role="form">
-            <input type="nom" name="email" class="floating-label" placeholder="Nom" aria-required="true">
-            <input type="prenom" name="mdp" class="floating-label" placeholder="Prénom" aria-required="true">
+            <input type="nom" name="nom" class="floating-label" placeholder="Nom" aria-required="true">
+            <input type="prenom" name="prenom" class="floating-label" placeholder="Prénom" aria-required="true">
             <input type="email" name="email" class="floating-label" placeholder="Email" aria-required="true">
-            <select type="pays" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
-                <option>Ville</option>
-                <option>Paris</option>
-                <option>Milan</option>
-                <option>Munich</option>
-                <option>Pekin</option>
-                <option>Barcelone</option>
-              </select>
             <select type="pays" name="pays" class="floating-label" placeholder="Pays" aria-required="true">
                 <option>Pays</option>
                 <option>France</option>
@@ -103,6 +96,14 @@
                 <option>Chine</option>
                 <option>Espagne</option> 
             </select>
+            <select type="ville" name="ville" class="floating-label" placeholder="ville" aria-required="true">
+                <option>Ville</option>
+                <option>Paris</option>
+                <option>Milan</option>
+                <option>Munich</option>
+                <option>Pekin</option>
+                <option>Barcelone</option>
+              </select>
             <input type="submit" class="btn-sign-in" value="Envoyer le formulaire">
             </div>
         </form>
